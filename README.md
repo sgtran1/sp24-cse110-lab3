@@ -1,2 +1,2 @@
 # Lab 2 - Starter
-https://sgtran1.github.io/Lab2_Starter
+sgtran1.github.io/sp24-cse110-lab3
