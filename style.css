@@ -413,3 +413,28 @@ a:hover {
 h1, h2, h3 {
   font-family: Arial, sans-serif;
 }
+
+/* Descendant Combinator (element element) */
+.container div {
+  background-color: lightblue;
+}
+
+/* Child Combinator (element > element) */
+ul > li {
+  color: green;
+}
+
+/* General sibling combinator (element ~ element) */
+h2 ~ p {
+  font-style: italic;
+}
+
+/* Adjacent sibling combinator (element + element) */
+h1 + p {
+  font-weight: bold;
+}
+
+/* Combining Two Selectors (element.class) */
+ul.menu li.active {
+  background-color: yellow;
+}
