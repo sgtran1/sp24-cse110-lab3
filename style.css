@@ -257,4 +257,15 @@
   position: sticky;
 }
 
+/* Pseudo-class */
+
+/* Hover: Applies styles when the element is hovered over */
+.pseudo-class1:hover {
+  background-color: lightblue; /* Change background color on hover */
+}
+
+/* Active: Applies styles when the element is activated (e.g., clicked) */
+.pseudo-class2:active {
+  transform: scale(0.9); /* Scale down the element when active */
+}
 
