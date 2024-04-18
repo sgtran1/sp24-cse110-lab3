@@ -33,7 +33,7 @@
 
 /* Mixing colors */
 .element5 {
-    color: color-mix(blend, red 50%, blue); /* Blend of red and blue */
+    color: color-mix(blend, red 50%, blue); /* Blend of red and blues */
     background-color: color-mix(luminosity, yellow 30%, black); /* Luminosity mix of yellow and black */
   }
 /*Colorspace*/  
