@@ -121,6 +121,53 @@
   margin-left: 20pt; /* 20 points */
 }
 
+/* Configure the containers that hold your HTML content */
+
+/* Margin: Spacing between HTML elements */
+
+/* Longhand notation */
+.element21 {
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-bottom: 15px;
+  margin-left: 25px;
+}
+
+/* Shorthand notation */
+.element22 {
+  margin: 10px 20px 15px 25px; /* top right bottom left */
+}
+
+/* Auto margins */
+.element23 {
+  margin: auto; /* Center horizontally */
+}
+
+/* Padding: Spacing within HTML elements */
+
+/* Longhand notation */
+.element24 {
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+  padding-left: 25px;
+}
+
+/* Shorthand notation */
+.element25 {
+  padding: 10px 20px 15px 25px; /* top right bottom left */
+}
+
+/* Borders: Borders around HTML elements */
+
+.element26 {
+  border-style: solid;
+  border-color: #000;
+  border-width: 2px;
+  border-radius: 5px;
+}
+
+
   
 
 
