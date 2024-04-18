@@ -46,10 +46,53 @@
     --main-color: #007bff; /* Default color */
   }
   
-  /* Use the CSS variable with a fallback */
-  .element {
+/* Use the CSS variable with a fallback */
+.element7 {
     color: var(--main-color, blue); /* Use the variable with a fallback to 'blue' */
-  }
+}
+
+/* Apply background styles to your elements */
+
+/* Set background color */
+.element8 {
+  background-color: #f0f0f0; /* Light gray */
+}
+
+/* Use RGBA for semi-transparent backgrounds */
+.element9 {
+  background-color: rgba(255, 0, 0, 0.5); /* Semi-transparent red */
+}
+
+/* Use HSLA for more control over hue, saturation, lightness, and alpha */
+.element10 {
+  background-color: hsla(240, 100%, 50%, 0.3); /* Semi-transparent blue */
+}
+
+/* Background image */
+.element11 {
+  background-image: url('path/to/image.jpg');
+  background-size: cover; /* Cover the entire element */
+}
+
+/* Background repeat and position */
+.element12 {
+  background-image: url('path/to/pattern.png');
+  background-repeat: repeat; /* Repeat horizontally and vertically */
+  background-position: center; /* Center the background image */
+}
+
+/* Gradient backgrounds */
+.element13 {
+  background-image: linear-gradient(to right, #ff8c00, #ffc107); /* Orange to yellow gradient */
+}
+
+/* Multiple background images */
+.element14 {
+  background-image: url('path/to/image1.jpg'), url('path/to/image2.jpg');
+  background-size: cover, contain; /* First image covers, second image contained within */
+  background-position: center, top right; /* Positioning for each image */
+}
+
   
 
 
