@@ -356,3 +356,23 @@
     font-size: 0.8em; /* Decrease font size for footer */
   }
 }
+
+/* Fonts */
+
+/* Include and use a 3rd party font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Apply the imported font to elements */
+body {
+  font-family: 'Roboto', sans-serif; /* Use Roboto font for the entire document */
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif; /* Use Roboto font for headings */
+  font-weight: 700; /* Apply bold style to headings */
+}
+
+p {
+  font-family: 'Roboto', sans-serif; /* Use Roboto font for paragraphs */
+  font-weight: 400; /* Apply normal style to paragraphs */
+}
