@@ -167,6 +167,23 @@
   border-radius: 5px;
 }
 
+/* Style your text */
+
+/* Color */
+.text1 {
+  color: #333; /* Dark gray */
+}
+
+/* Text decoration */
+.text2 {
+  text-decoration: underline; /* Underline text */
+}
+
+/* Text alignment */
+.text3 {
+  text-align: center; /* Center-align text */
+}
+
 
   
 
