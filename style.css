@@ -269,3 +269,57 @@
   transform: scale(0.9); /* Scale down the element when active */
 }
 
+/* Flexbox */
+
+/* Apply flex to the display property */
+.flex-container {
+  display: flex;
+}
+
+/* Must have more than two children */
+.flex-child {
+  flex: 1; /* Flex-grow: 1; the child elements will grow equally */
+  margin: 10px; /* Add margin between flex items */
+}
+
+/* Must use minimum three of the flexbox related attributes */
+.flex-child:nth-child(odd) {
+  background-color: lightblue; /* Apply background color to odd-numbered flex items */
+}
+
+.flex-child:nth-child(even) {
+  background-color: lightcoral; /* Apply background color to even-numbered flex items */
+}
+
+.flex-child:last-child {
+  align-self: flex-end; /* Align the last flex item to the bottom */
+}
+
+
+/* Grid */
+
+/* Apply grid to the display property */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Define 3 equal columns */
+  grid-gap: 10px; /* Add gap between grid items */
+}
+
+/* Must have more than two children */
+.grid-child {
+  background-color: lightgreen; /* Apply background color to grid items */
+  padding: 20px; /* Add padding to grid items */
+}
+
+/* Must use a minimum of three of the grid related attributes */
+.grid-child:nth-child(2) {
+  grid-column: span 2; /* Make the second grid item span across 2 columns */
+}
+
+.grid-child:nth-child(3) {
+  grid-row: span 2; /* Make the third grid item span across 2 rows */
+}
+
+.grid-child:nth-child(4) {
+  justify-self: center; /* Center align the fourth grid item */
+}
