@@ -1,1 +1,46 @@
 /*This is my style sheet*/
+/* Color */
+
+/* Apply colors to your HTML elements */
+
+/* Using rgb(r, g, b) or rgba(r, g, b, a) */
+/* red, green, blue, alpha values */
+.element1 {
+  color: rgba(255, 0, 0, 0.5); /* Semi-transparent red */
+  background-color: rgb(0, 128, 255); /* Blue */
+}
+
+/* Using hex codes */
+.element2 {
+  color: #FFA500; /* Orange */
+  background-color: #000; /* Black */
+}
+
+/* Using hsl(h, s, l) or hsla(h, s, l, a) */
+/* hue, saturation, lightness, alpha values */
+.element3 {
+  color: hsla(120, 100%, 50%, 0.7); /* Semi-transparent green */
+  background-color: hsl(0, 100%, 50%); /* Red */
+}
+
+/* Using color names */
+.element4 {
+  color: purple; /* Purple */
+  background-color: yellow; /* Yellow */
+}
+
+/* Wider-gamut color */
+
+/* Mixing colors */
+.element5 {
+    color: color-mix(blend, red 50%, blue); /* Blend of red and blues */
+    background-color: color-mix(luminosity, yellow 30%, black); /* Luminosity mix of yellow and black */
+  }
+/*Colorspace*/  
+.element6 {
+    color: color(colorspace 0 0 0); /* Blend of red and blue */
+}
+
+
+
+
