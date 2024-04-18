@@ -41,6 +41,15 @@
     color: color(colorspace 0 0 0); /* Blend of red and blue */
 }
 
-
+/* Define a CSS variable with a fallback */
+:root {
+    --main-color: #007bff; /* Default color */
+  }
+  
+  /* Use the CSS variable with a fallback */
+  .element {
+    color: var(--main-color, blue); /* Use the variable with a fallback to 'blue' */
+  }
+  
 
 
