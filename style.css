@@ -206,6 +206,29 @@
   display: inline;
 }
 
-  
+/* Sizing */
+
+/* Set the height and width for an element */
+
+/* Height */
+.sizing1 {
+  height: 100px; /* Set height to 100 pixels */
+}
+
+/* Width */
+.sizing2 {
+  width: 200px; /* Set width to 200 pixels */
+}
+
+/* Max-width */
+.sizing3 {
+  max-width: 300px; /* Set maximum width to 300 pixels */
+}
+
+/* Min-width */
+.sizing4 {
+  min-width: 150px; /* Set minimum width to 150 pixels */
+}
+
 
 
