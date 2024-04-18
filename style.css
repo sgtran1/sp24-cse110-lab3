@@ -30,18 +30,17 @@
 }
 
 /* Wider-gamut color */
-.element5 {
-  color: color(display-p3 0.5 1 0); /* Vivid green in Display-P3 color space */
-  background-color: color(rec2020 0.8 0.3 0.1); /* Deep orange in Rec.2020 color space */
-}
 
 /* Mixing colors */
+.element5 {
+    color: color-mix(blend, red 50%, blue); /* Blend of red and blue */
+    background-color: color-mix(luminosity, yellow 30%, black); /* Luminosity mix of yellow and black */
+  }
+/*Colorspace*/  
 .element6 {
-  color: color-mix(blend, red 50%, blue); /* Blend of red and blue */
-  background-color: color-mix(luminosity, yellow 30%, black); /* Luminosity mix of yellow and black */
-}
-
-/*Colorspace*/
-.element7 {
     color: color(colorspace 0 0 0); /* Blend of red and blue */
 }
+
+
+
+
