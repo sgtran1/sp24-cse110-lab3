@@ -184,6 +184,27 @@
   text-align: center; /* Center-align text */
 }
 
+/* Display property */
+
+/* None: Hide the element */
+.display1 {
+  display: none;
+}
+
+/* Block: Display the element as a block-level element */
+.display2 {
+  display: block;
+}
+
+/* Inline-block: Display the element as an inline-level block container */
+.display3 {
+  display: inline-block;
+}
+
+/* Inline: Display the element as an inline-level element */
+.display4 {
+  display: inline;
+}
 
   
 
