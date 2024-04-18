@@ -93,6 +93,34 @@
   background-position: center, top right; /* Positioning for each image */
 }
 
+/* Units of measurement for sizing and spacing your elements */
+
+/* Relative units */
+.element15 {
+  width: 50%; /* 50% of the parent element's width */
+}
+
+.element16 {
+  font-size: 1.2em; /* 1.2 times the size of the parent element's font size */
+}
+
+.element17 {
+  margin-top: 2rem; /* 2 times the font size of the root element */
+}
+
+/* Absolute units */
+.element18 {
+  width: 200px; /* 200 pixels */
+}
+
+.element19 {
+  height: 10vh; /* 10% of the viewport height */
+}
+
+.element20 {
+  margin-left: 20pt; /* 20 points */
+}
+
   
 
 
