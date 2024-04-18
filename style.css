@@ -230,5 +230,31 @@
   min-width: 150px; /* Set minimum width to 150 pixels */
 }
 
+/* Position property */
+
+/* Static: Default positioning */
+.position1 {
+  position: static;
+}
+
+/* Relative: Position relative to its normal position */
+.position2 {
+  position: relative;
+}
+
+/* Fixed: Positioned relative to the viewport, doesn't move with scrolling */
+.position3 {
+  position: fixed;
+}
+
+/* Absolute: Positioned relative to its closest positioned ancestor */
+.position4 {
+  position: absolute;
+}
+
+/* Sticky: Positioned based on the user's scroll position */
+.position5 {
+  position: sticky;
+}
 
 
