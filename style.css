@@ -376,3 +376,40 @@ p {
   font-family: 'Roboto', sans-serif; /* Use Roboto font for paragraphs */
   font-weight: 400; /* Apply normal style to paragraphs */
 }
+
+/* Class Selector (.class) */
+.button {
+  background-color: blue;
+  color: white;
+}
+
+/* ID Selector (#id) */
+#header {
+  font-size: 24px;
+}
+
+/* Universal Selector (*) */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Element Selector (element) */
+div {
+  border: 1px solid black;
+}
+
+/* Attribute Selector (e.g. [attribute=foo]) */
+input[type="text"] {
+  border: 1px solid gray;
+}
+
+/* Pseudo-class Selector (e.g. p:hover) */
+a:hover {
+  color: red;
+}
+
+/* Selector List (element, element) */
+h1, h2, h3 {
+  font-family: Arial, sans-serif;
+}
