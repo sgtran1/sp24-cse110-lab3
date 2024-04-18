@@ -1,6 +1,34 @@
 /*This is my style sheet*/
 /* Color */
 
+
+
+/* New selector */
+/* Selects an h1 heading with a
+paragraph element that immediately follows
+the h1 and applies the style to h1 */
+h1,
+h2 {
+  margin: 0 0 1rem 0;
+}
+
+h1:has(+ h2) {
+  margin: 0 0 0.25rem 0;
+}
+
+/*nested selector*/
+.example11 {
+    font-family: system-ui;
+    font-size: 1.2rem;
+    & > a {
+      color: tomato;
+      &:hover,
+      &:focus {
+        color: ivory;
+        background-color: tomato;
+      }
+    }
+  }
 /* Apply colors to your HTML elements */
 
 /* Using rgb(r, g, b) or rgba(r, g, b, a) */
@@ -438,11 +466,3 @@ h1 + p {
 ul.menu li.active {
   background-color: yellow;
 }
-
-/* New selector */
-/* Selects an h1 heading with a
-paragraph element that immediately follows
-the h1 and applies the style to h1 */
-h1:has(+ p) {
-    margin-bottom: 0;
-  }
