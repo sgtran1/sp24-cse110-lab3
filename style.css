@@ -17,7 +17,7 @@ h1:has(+ h2) {
 }
 
 /*nested selector*/
-.example11 {
+.example110 {
     font-family: system-ui;
     font-size: 1.2rem;
     & > a {
@@ -28,7 +28,7 @@ h1:has(+ h2) {
         background-color: tomato;
       }
     }
-  }
+}
 /* Apply colors to your HTML elements */
 
 /* Using rgb(r, g, b) or rgba(r, g, b, a) */
@@ -61,8 +61,8 @@ h1:has(+ h2) {
 
 /* Mixing colors */
 .element5 {
-    color: color-mix(blend, red 50%, blue); /* Blend of red and blues */
-    background-color: color-mix(luminosity, yellow 30%, black); /* Luminosity mix of yellow and black */
+    color: color-mix(blend, rgb(255, 12, 12) 50%, rgb(246, 246, 246)); /* Blend of red and blues */
+    background-color: color-mix(luminosity, yellow 30%, rgb(74, 51, 170)); /* Luminosity mix of yellow and black */
   }
 /*Colorspace*/  
 .element6 {
@@ -98,10 +98,19 @@ h1:has(+ h2) {
 
 /* Background image */
 .element11 {
-  background-image: url('path/to/image.jpg');
-  background-size: cover; /* Cover the entire element */
+    background-image: url('path/to/image.jpg');
+    background-size: cover; /* Cover the entire element */
+    width: 50%; /* 50% of the parent element's width */
+    margin-top: 2rem; /* 2 times the font size of the root element */
+    max-width: 200px; /* 200 pixels */
+    height: 10vh; /* 10% of the viewport height */
+    margin-left: 20pt; /* 20 points */
+    background-position: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding: 3px 3px 3px 3px;
+    text-align: center;  
 }
-
 /* Background repeat and position */
 .element12 {
   background-image: url('path/to/pattern.png');
@@ -302,12 +311,19 @@ h1:has(+ h2) {
 /* Apply flex to the display property */
 .flex-container {
   display: flex;
+  margin: auto;
+  position: static;
 }
 
 /* Must have more than two children */
 .flex-child {
   flex: 1; /* Flex-grow: 1; the child elements will grow equally */
   margin: 10px; /* Add margin between flex items */
+  border-color: #000;
+  border-style: dotted;
+  border-width: 3px;
+  border-radius: 3px;
+  position: static;
 }
 
 /* Must use minimum three of the flexbox related attributes */
@@ -325,31 +341,24 @@ h1:has(+ h2) {
 
 
 /* Grid */
-
-/* Apply grid to the display property */
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Define 3 equal columns */
-  grid-gap: 10px; /* Add gap between grid items */
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
-/* Must have more than two children */
 .grid-child {
-  background-color: lightgreen; /* Apply background color to grid items */
-  padding: 20px; /* Add padding to grid items */
-}
-
-/* Must use a minimum of three of the grid related attributes */
-.grid-child:nth-child(2) {
-  grid-column: span 2; /* Make the second grid item span across 2 columns */
-}
-
-.grid-child:nth-child(3) {
-  grid-row: span 2; /* Make the third grid item span across 2 rows */
-}
-
-.grid-child:nth-child(4) {
-  justify-self: center; /* Center align the fourth grid item */
+  background-color: lightgreen;
+  padding: 20px;
+  height: auto;
+  width: auto;
+  max-width: 200px;
+  min-width: auto;
+  margin: auto auto auto auto
 }
 
 /* Responsiveness */
@@ -440,6 +449,7 @@ a:hover {
 /* Selector List (element, element) */
 h1, h2, h3 {
   font-family: Arial, sans-serif;
+  text-align: center;
 }
 
 /* Descendant Combinator (element element) */
@@ -449,7 +459,13 @@ h1, h2, h3 {
 
 /* Child Combinator (element > element) */
 ul > li {
-  color: green;
+  color: rgb(1, 0, 80);
+  text-align: center;
+}
+/* Child Combinator (element > element) */
+ol > li {
+    color: rgb(1, 0, 80);
+    text-align: center;
 }
 
 /* General sibling combinator (element ~ element) */
@@ -460,9 +476,18 @@ h2 ~ p {
 /* Adjacent sibling combinator (element + element) */
 h1 + p {
   font-weight: bold;
+  font-style: italic;
 }
 
 /* Combining Two Selectors (element.class) */
 ul.menu li.active {
   background-color: yellow;
+}
+/* Modify paragrams to be centerd*/
+p {
+    text-align: center;
+    text-decoration: none;
+    text-align: auto;
+    font-size: 1em;
+    position: sticky;
 }
